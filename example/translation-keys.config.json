@@ -1,0 +1,3 @@
+{
+  "readDirsPattern": ["src/pages/*.ts", "src/other/*.ts"]
+}

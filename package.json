@@ -1,0 +1,49 @@
+{
+  "name": "translation-keys-table",
+  "version": "0.0.1",
+  "description": "Collects text keys into a table",
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ann2827/translation-keys-table.git"
+  },
+  "keywords": [
+    "frontend",
+    "keys",
+    "tarnslation",
+    "language",
+    "table",
+    "js",
+    "javascript"
+  ],
+  "author": "Ann Bystrova <ann.bystrova96@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ann2827/translation-keys-table/issues"
+  },
+  "homepage": "https://github.com/Ann2827/translation-keys-table#readme",
+  "directories": {
+    "example": "example"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14.16.0",
+    "npm": ">=8.1.0"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/gapi": "^0.0.42",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "gapi": "^0.0.3"
+  }
+}

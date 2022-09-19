@@ -1,0 +1,12 @@
+{
+  "main": {
+    "title": "Main Page Title",
+    "description": "Some description text"
+  },
+  "help": {
+    "title": "Help Page Title"
+  },
+  "error": {
+    "404": "Something went wrong."
+  }
+}
