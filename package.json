@@ -2,11 +2,14 @@
   "name": "translation-keys-table",
   "version": "0.0.1",
   "description": "Collects text keys into a table",
-  "main": "dist/index.js",
-  "source": "src/index.tsx",
-  "types": "dist/index.d.ts",
+  "bin": {
+    "translation-keys": "dist/bin/index.cjs"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rm -rf dist",
+    "build": "yarn prebuild && tsc && rollup -c && yarn grant-perms",
+    "start": "yarn grant-perms && tsc && rollup -c -w",
+    "grant-perms": "node dist/bin/grantPerms.mjs"
   },
   "repository": {
     "type": "git",
@@ -38,12 +41,24 @@
     "npm": ">=8.1.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
     "@types/cross-spawn": "^6.0.2",
+    "@types/flat": "^5.0.2",
     "@types/gapi": "^0.0.42",
+    "@types/glob": "^8.0.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-bin": "^1.0.0",
+    "rollup-plugin-dev": "^2.0.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
     "typescript": "^4.8.3"
   },
   "dependencies": {
     "cross-spawn": "^7.0.3",
-    "gapi": "^0.0.3"
+    "flat": "^5.0.2",
+    "gapi": "^0.0.3",
+    "glob": "^8.0.3"
   }
 }

@@ -2,7 +2,7 @@ import { TConfig } from '../types/config';
 import { staticImplements } from '../types/decorators';
 import { TData } from '../types/data';
 
-const gapi = require('gapi');
+// const gapi = require('gapi');
 
 interface IGoogleSheet {
   new (config: TConfig, data: TData): {
@@ -28,10 +28,10 @@ class GoogleSheet {
     const DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
     const SCOPES = "https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.file";
 
-    gapi.server.setApiKey(API_KEY);
-    gapi.server.load('sheets','v4',function(){
-
-    });
+    // gapi.server.setApiKey(API_KEY);
+    // gapi.server.load('sheets','v4',function(){
+    //
+    // });
   }
 }
 

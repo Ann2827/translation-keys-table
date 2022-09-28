@@ -1,15 +1,12 @@
 export enum EFormat {
   json = 'json',
-  properties = 'properties',
 }
 
 export type TFormatJson = Record<string, unknown> | Record<string, unknown>[];
-export type TFormatProperties = string;
-export type TFormats = TFormatJson | TFormatProperties;
+export type TFormats = TFormatJson;
 export type TFlat = Record<string, string>;
 export type TEditableJson = Record<string, string>;
-export type TEditableProperties = string[];
-export type TEditable = TEditableJson | TEditableProperties;
+export type TEditable = TEditableJson;
 
 export interface IFormatBase<T = TFormats, W = TEditable> {
   // new (): {};

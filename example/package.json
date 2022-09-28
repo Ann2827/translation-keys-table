@@ -7,7 +7,7 @@
   },
   "author": "Ann Bystrova <ann.bystrova96@mail.ru>",
   "devDependencies": {
-    "translation-keys-table": "link:.."
+    "translation-keys-table": "file:./../../translation-keys-table"
   },
   "engines": {
     "node": ">=14.16.0",
