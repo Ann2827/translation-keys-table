@@ -1,0 +1,20 @@
+{
+  "name": "translation-keys-table-example",
+  "version": "0.0.1",
+  "description": "Collects text keys into a table Example",
+  "scripts": {
+    "generate": "translation-keys"
+  },
+  "author": "Ann Bystrova <ann.bystrova96@mail.ru>",
+  "devDependencies": {
+    "translation-keys-table": "file:./../../translation-keys-table"
+  },
+  "engines": {
+    "node": ">=14.16.0",
+    "npm": ">=8.1.0"
+  },
+  "dependencies": {
+    "i18next": "^21.9.1",
+    "typescript": "^4.8.3"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "readDirsPattern": ["src/pages/*.ts", "src/other/*", "src/not_exist/**/*.ts"],
+  "translationRegexp": "i18next.t\\(('|`)",
+  "subStrings": ["i18next.t('*'", "i18next.t(`*`"]
+}
